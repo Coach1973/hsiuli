@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>黃秀麗｜全國古典音樂推廣版主</title>
+<meta name="description" content="黃秀麗，全國古典音樂推廣版主。長期以社群力量推廣古典音樂，串連主辦單位、樂團與樂迷，讓好音樂被更多人聽見。歡迎音樂會宣傳、導聆、藝文跨界與公益合作邀約。">
+<meta property="og:title" content="黃秀麗｜全國古典音樂推廣版主">
+<meta property="og:description" content="以社群力量推廣古典音樂，串連主辦單位、樂團與樂迷。歡迎合作邀約。">
+<meta property="og:image" content="https://event.bymyway.com/curated/hsiuli/portrait.jpg">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf7f3;
+  --bg-2:#f2ece5;
+  --card:#fffdfa;
+  --ink:#241f1c;
+  --ink-2:#4b433d;
+  --muted:#8b8077;
+  --line:#e4dad0;
+  --rose:#c08a84;
+  --rose-soft:#e8d3cf;
+  --gold:#a8834a;
+  --shadow:0 18px 50px -28px rgba(70,50,40,.35);
+  --maxw:1120px;
+  --serif:"Noto Serif TC","Songti TC","Source Han Serif TC",Georgia,serif;
+  --sans:"Noto Sans TC","PingFang TC","Helvetica Neue",Arial,sans-serif;
+  --display:"Cormorant Garamond","Noto Serif TC",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--serif);font-size:17px;line-height:1.95;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;height:auto}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+section{padding:96px 0}
+@media(max-width:720px){section{padding:64px 0}}
+
+/* ── nav ── */
+nav{
+  position:sticky;top:0;z-index:50;background:rgba(250,247,243,.88);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
+.brand{font-family:var(--sans);font-weight:700;letter-spacing:.16em;font-size:15px}
+.brand span{color:var(--gold);font-weight:400;letter-spacing:.1em;font-size:12.5px;margin-left:10px}
+.navlinks{display:flex;gap:26px;font-family:var(--sans);font-size:14px}
+.navlinks a{color:var(--ink-2)}
+.navlinks a:hover{color:var(--gold);text-decoration:none}
+@media(max-width:860px){.navlinks{display:none}}
+.btn{
+  display:inline-block;font-family:var(--sans);font-size:14px;letter-spacing:.06em;
+  padding:11px 24px;border-radius:999px;border:1px solid var(--gold);color:var(--gold);
+  background:transparent;transition:.25s;white-space:nowrap
+}
+.btn:hover{background:var(--gold);color:#fff;text-decoration:none}
+.btn.solid{background:var(--gold);color:#fff}
+.btn.solid:hover{background:#8d6c3a;border-color:#8d6c3a}
+
+/* ── hero ── */
+header.hero{padding:84px 0 92px;background:
+  radial-gradient(120% 90% at 82% 8%, #f6e9e4 0%, rgba(246,233,228,0) 60%),
+  linear-gradient(180deg,#faf7f3,#f4ede6);
+  border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1fr .78fr;gap:64px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px}}
+.eyebrow{font-family:var(--sans);font-size:13px;letter-spacing:.3em;color:var(--gold);margin-bottom:22px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,7vw,64px);line-height:1.2;margin:0 0 6px;letter-spacing:.04em}
+.h1-en{font-family:var(--display);font-style:italic;font-size:clamp(17px,2.4vw,22px);color:var(--muted);letter-spacing:.06em;margin-bottom:26px}
+.lede{font-size:19px;line-height:2.1;color:var(--ink-2);max-width:30em;margin:0 0 14px}
+.lede strong{color:var(--ink);font-weight:600;box-shadow:inset 0 -.55em 0 var(--rose-soft)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.portrait{position:relative;max-width:460px;margin-left:auto}
+.portrait img{
+  width:100%;height:auto;aspect-ratio:528 / 704;object-fit:contain;
+  border-radius:4px;box-shadow:var(--shadow);
+  filter:saturate(1.02)
+}
+@media(max-width:900px){.portrait{margin:0 auto}}
+.portrait:before{
+  content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--rose);
+  border-radius:4px;z-index:-1
+}
+.portrait figcaption{font-family:var(--sans);font-size:12px;color:var(--muted);letter-spacing:.1em;margin-top:18px;text-align:right}
+
+/* ── quick entries ── */
+.entries{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:-46px}
+@media(max-width:860px){.entries{grid-template-columns:1fr;margin-top:-30px}}
+.entry{
+  background:var(--card);border:1px solid var(--line);border-radius:10px;padding:26px 26px 22px;
+  box-shadow:0 10px 30px -22px rgba(70,50,40,.4);transition:.25s
+}
+.entry:hover{transform:translateY(-4px);box-shadow:0 18px 40px -24px rgba(70,50,40,.45)}
+.entry .k{font-family:var(--sans);font-size:11.5px;letter-spacing:.24em;color:var(--gold);margin-bottom:10px}
+.entry h3{font-size:19px;margin:0 0 8px;font-weight:600}
+.entry p{margin:0 0 14px;font-size:15px;color:var(--ink-2);line-height:1.85}
+.entry a{font-family:var(--sans);font-size:13.5px}
+
+/* ── section heads ── */
+.shead{margin-bottom:46px}
+.shead .k{font-family:var(--sans);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.shead h2{font-size:clamp(26px,4vw,34px);font-weight:600;margin:0;letter-spacing:.04em}
+.shead p{color:var(--muted);font-size:16px;margin:12px 0 0;max-width:38em}
+.rule{width:44px;height:2px;background:var(--rose);margin:0 0 22px}
+
+/* ── about ── */
+.about{background:var(--bg)}
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:60px}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:34px}}
+.about p{color:var(--ink-2)}
+.pull{
+  font-family:var(--serif);font-size:21px;line-height:2;color:var(--ink);
+  border-left:2px solid var(--rose);padding-left:26px;margin:0 0 26px
+}
+.facts{border-top:1px solid var(--line)}
+.fact{display:flex;gap:18px;padding:16px 0;border-bottom:1px solid var(--line)}
+.fact dt{font-family:var(--sans);font-size:13px;letter-spacing:.14em;color:var(--muted);width:98px;flex:none;padding-top:5px}
+.fact dd{margin:0;font-size:16px;color:var(--ink-2)}
+
+/* ── services ── */
+.services{background:var(--bg-2);border-block:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media(max-width:800px){.svc{grid-template-columns:1fr}}
+.svc-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:32px 30px}
+.svc-card .num{font-family:var(--display);font-size:34px;color:var(--rose);line-height:1;margin-bottom:14px}
+.svc-card h3{font-size:19px;margin:0 0 10px;font-weight:600}
+.svc-card p{margin:0;font-size:15.5px;color:var(--ink-2);line-height:1.9}
+.svc-card ul{margin:14px 0 0;padding-left:0;list-style:none}
+.svc-card li{font-family:var(--sans);font-size:13.5px;color:var(--muted);padding-left:16px;position:relative;line-height:1.9}
+.svc-card li:before{content:"—";position:absolute;left:0;color:var(--rose)}
+
+/* ── numbers ── */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+@media(max-width:800px){.stats{grid-template-columns:repeat(2,1fr);gap:28px}}
+.stat .n{font-family:var(--display);font-size:clamp(38px,6vw,54px);color:var(--gold);line-height:1}
+.stat .l{font-family:var(--sans);font-size:13px;letter-spacing:.14em;color:var(--muted);margin-top:10px}
+
+/* ── audience blocks ── */
+.blk-title{font-size:21px;font-weight:600;margin:0 0 22px;padding-left:16px;border-left:3px solid var(--rose);letter-spacing:.03em}
+.sc-k{font-family:var(--sans);font-size:11.5px;letter-spacing:.24em;color:var(--gold);margin-bottom:10px}
+.showcase{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 32px;box-shadow:0 14px 40px -30px rgba(70,50,40,.5)}
+.showcase h4{font-size:22px;margin:0 0 12px;font-weight:600;letter-spacing:.03em}
+.showcase p{margin:0;font-size:15.5px;color:var(--ink-2);line-height:1.95;max-width:46em}
+.sched{margin-top:26px;border-top:1px solid var(--line)}
+.sched-row{display:grid;grid-template-columns:1.5fr .6fr 2fr .8fr;gap:16px;align-items:center;
+  padding:15px 4px;border-bottom:1px solid var(--line)}
+.sched-head{font-family:var(--sans);font-size:11.5px;letter-spacing:.2em;color:var(--muted);padding:10px 4px}
+.sched-row .d{font-family:var(--sans);font-size:14.5px;color:var(--gold);letter-spacing:.02em}
+.sched-row .c{font-size:17px;font-weight:600}
+.sched-row .v{font-size:15.5px;color:var(--ink-2)}
+.sched-row .t{font-family:var(--sans);font-size:13.5px;text-align:right}
+.sched-row:hover{background:#fbf7f2}
+@media(max-width:760px){
+  .sched-row{grid-template-columns:1fr auto;gap:4px 14px;padding:16px 4px}
+  .sched-head{display:none}
+  .sched-row .d{grid-column:1/2}
+  .sched-row .c{grid-column:2/3;text-align:right}
+  .sched-row .v{grid-column:1/3}
+  .sched-row .t{grid-column:1/3;text-align:left}
+}
+.sched-note{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:18px;line-height:1.9}
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:860px){.notes{grid-template-columns:1fr}}
+.note-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:28px 26px}
+.note-card .nk{font-family:var(--sans);font-size:11.5px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px}
+.note-card h4{font-size:18.5px;margin:0 0 12px;font-weight:600;line-height:1.6}
+.note-card p{margin:0 0 12px;font-size:15.5px;color:var(--ink-2);line-height:1.95}
+.note-card p:last-child{margin-bottom:0}
+.follow{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;margin-top:34px;
+  background:var(--bg-2);border:1px solid var(--line);border-radius:12px;padding:30px 32px}
+@media(max-width:760px){.follow{grid-template-columns:1fr;gap:22px}}
+.follow h4{font-size:19px;margin:0 0 8px;font-weight:600}
+.follow p{margin:0;font-size:15px;color:var(--ink-2)}
+.follow-links{display:grid;grid-template-columns:auto 1fr;gap:12px 16px;align-items:center}
+.follow-links .lab{font-family:var(--sans);font-size:12.5px;letter-spacing:.14em;color:var(--muted)}
+
+/* ── media coverage ── */
+.press{display:grid;gap:18px}
+.press-item{
+  display:grid;grid-template-columns:130px 1fr auto;gap:24px;align-items:center;
+  background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px 26px
+}
+@media(max-width:760px){.press-item{grid-template-columns:1fr;gap:10px}}
+.press-item .date{font-family:var(--sans);font-size:13px;letter-spacing:.1em;color:var(--gold)}
+.press-item h3{margin:0;font-size:17.5px;font-weight:500;line-height:1.7}
+.press-item .src{font-family:var(--sans);font-size:13px;color:var(--muted);margin-top:6px}
+.press-item .go{font-family:var(--sans);font-size:13px;white-space:nowrap}
+.quote-block{
+  background:var(--card);border:1px solid var(--line);border-left:3px solid var(--rose);
+  border-radius:0 10px 10px 0;padding:28px 32px;margin-top:28px
+}
+.quote-block p{margin:0;font-size:18px;line-height:2}
+.quote-block .cite{font-family:var(--sans);font-size:13px;color:var(--muted);margin-top:14px}
+
+/* ── timeline ── */
+.timeline{position:relative;padding-left:26px}
+.timeline:before{content:"";position:absolute;left:4px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.tl{position:relative;padding:0 0 34px}
+.tl:before{content:"";position:absolute;left:-26px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 4px var(--bg)}
+.tl .y{font-family:var(--sans);font-size:13px;letter-spacing:.14em;color:var(--gold)}
+.tl h3{margin:4px 0 4px;font-size:18px;font-weight:600}
+.tl p{margin:0;font-size:15.5px;color:var(--ink-2)}
+
+/* ── press kit ── */
+.kit{background:var(--bg-2);border-block:1px solid var(--line)}
+.kit-box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:26px 28px;margin-bottom:18px}
+.kit-box .k{font-family:var(--sans);font-size:12px;letter-spacing:.2em;color:var(--gold);margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
+.kit-box p{margin:0;font-size:16px;line-height:2;color:var(--ink-2)}
+.copy{font-family:var(--sans);font-size:12px;border:1px solid var(--line);border-radius:999px;padding:5px 14px;color:var(--muted);background:transparent;cursor:pointer;transition:.2s}
+.copy:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ── contact ── */
+.contact{background:linear-gradient(180deg,#f4ede6,#efe4da)}
+.contact-grid{display:grid;grid-template-columns:1fr .9fr;gap:60px;align-items:start}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:36px}}
+.ways{border-top:1px solid var(--line)}
+.way{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);font-family:var(--sans);font-size:15px}
+.way .lab{color:var(--muted);font-size:13px;letter-spacing:.14em}
+.note{font-size:15px;color:var(--ink-2);background:rgba(255,255,255,.55);border:1px solid var(--line);border-radius:10px;padding:22px 24px}
+
+/* confirmed contact value */
+.val{font-family:var(--sans);font-size:15px;color:var(--ink);letter-spacing:.01em}
+.val a{color:var(--ink);text-decoration:none;border-bottom:1px solid #d9bd93;padding-bottom:2px;transition:color .25s ease,border-color .25s ease}
+.val a:hover{color:#8a6a43;border-color:#8a6a43}
+.follow-links .val{font-size:14.5px}
+
+/* fill-in marker */
+.fill{
+  font-family:var(--sans);font-size:14px;color:#b08968;
+  background:#fbf3e7;border:1px dashed #d9bd93;border-radius:5px;padding:1px 9px;white-space:nowrap
+}
+
+footer{background:#241f1c;color:#cdc2b8;padding:54px 0 42px;font-family:var(--sans);font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer a{color:#dcb98a}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">黃秀麗 <span>HUANG HSIU-LI</span></div>
+    <div class="navlinks">
+      <a href="#about">關於</a>
+      <a href="#services">合作邀約</a>
+      <a href="#fans">推薦與導聆</a>
+      <a href="#press">媒體報導</a>
+      <a href="#kit">媒體資料</a>
+    </div>
+    <a class="btn solid" href="#contact">聯絡合作</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">全國古典音樂推廣版主</div>
+      <h1>黃秀麗</h1>
+      <div class="h1-en">Huang Hsiu-Li　·　Classical Music Advocate</div>
+      <p class="lede">我做的事很簡單：<strong>把好音樂，送到願意聽的人面前。</strong></p>
+      <p class="lede">在社群上，我為全國各地的音樂會做推廣、寫分享、串連樂迷；在現場，我是把節目單上的名字變成有溫度的故事的那個人。音樂不該只留在音樂廳裡。</p>
+      <div class="hero-cta">
+        <a class="btn solid" href="#services">洽談合作</a>
+        <a class="btn" href="#kit">下載媒體資料</a>
+      </div>
+    </div>
+    <figure class="portrait" style="margin:0">
+      <img src="portrait.jpg" alt="黃秀麗形象照" width="528" height="704">
+      <figcaption>2026</figcaption>
+    </figure>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="entries reveal">
+    <div class="entry">
+      <div class="k">FOR ORGANIZERS</div>
+      <h3>主辦單位 ・ 樂團</h3>
+      <p>需要讓一場音樂會被更多對的人看見？我提供社群推廣、導聆與跨界串連。</p>
+      <a href="#services">看合作項目 →</a>
+    </div>
+    <div class="entry">
+      <div class="k">FOR AUDIENCE</div>
+      <h3>樂迷 ・ 聽眾</h3>
+      <p>近期值得走一趟的演出、入門曲目與聆聽筆記，都整理在這裡。</p>
+      <a href="#fans">看推薦與導聆 →</a>
+    </div>
+    <div class="entry">
+      <div class="k">FOR PRESS</div>
+      <h3>媒體 ・ 採訪</h3>
+      <p>簡介、頭銜、形象照與歷年報導，可直接取用，不必再來信詢問。</p>
+      <a href="#kit">取用媒體資料 →</a>
+    </div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="wrap about-grid reveal">
+    <div>
+      <div class="shead" style="margin-bottom:0">
+        <div class="k">ABOUT</div>
+        <h2>關於秀麗</h2>
+      </div>
+    </div>
+    <div>
+      <div class="rule"></div>
+      <p class="pull">古典音樂常被誤會成一道門檻。<br>我一直相信，它只是缺一個帶路的人。</p>
+      <p>我是黃秀麗，長期投入古典音樂推廣，媒體稱我為「全國古典音樂推廣版主」。這些年，我以社群為基地，分享全國各地的音樂會資訊、記錄現場、寫下聆聽的感受，讓原本零散的演出訊息，能夠真正抵達願意聆聽的人。</p>
+      <p>我不是演奏家，也不是學院派的樂評。我的位置在中間——站在舞台與觀眾之間，把主辦單位想說的話，翻譯成一般人願意點開、願意轉發、願意買票走進場的語言。</p>
+      <p>近年我也把觸角延伸到藝文跨界與公益現場：當藝術走進醫院、走進校園、走進日常生活的空間，音樂便不再只是欣賞的對象，而成為真實的陪伴。</p>
+      <dl class="facts" style="margin-top:34px">
+        <div class="fact"><dt>身分</dt><dd>全國古典音樂推廣版主</dd></div>
+        <div class="fact"><dt>專長</dt><dd>音樂會社群推廣 ・ 導聆與活動主持 ・ 藝文跨界串連</dd></div>
+        <div class="fact"><dt>關注</dt><dd>古典音樂普及 ・ 醫療與藝術 ・ 校園與在地藝文</dd></div>
+        <div class="fact"><dt>活動地區</dt><dd>全國（北 ・ 中 ・ 南）</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap reveal">
+    <div class="shead">
+      <div class="k">COLLABORATION</div>
+      <h2>合作邀約項目</h2>
+      <p>給主辦單位、樂團、經紀公司與藝文場館：以下是我最常被邀請執行的四件事。實際內容可依檔期與預算調整。</p>
+    </div>
+    <div class="svc">
+      <div class="svc-card">
+        <div class="num">01</div>
+        <h3>音樂會社群推廣</h3>
+        <p>從節目單裡找出真正的故事，寫成樂迷願意讀完的文字，在社群上為演出製造聲量與售票動能。</p>
+        <ul>
+          <li>演出前宣傳貼文與曲目導讀</li>
+          <li>樂迷社群同步曝光與擴散</li>
+          <li>演出後現場紀錄與心得回饋</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="num">02</div>
+        <h3>導聆 ・ 活動主持</h3>
+        <p>演出前的十分鐘，決定了許多人這一晚聽不聽得懂。我用生活的語言，替聽眾把門打開。</p>
+        <ul>
+          <li>音樂會前導聆、中場解說</li>
+          <li>開幕典禮、茶會與記者會主持</li>
+          <li>校園、社區推廣講座</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="num">03</div>
+        <h3>藝文跨界串連</h3>
+        <p>音樂可以和展覽、視覺藝術、醫療空間與品牌活動相遇。我熟悉如何把不同領域的人放在同一個現場。</p>
+        <ul>
+          <li>展覽開幕演出規劃與媒合</li>
+          <li>藝文界、醫療界、教育界人脈串連</li>
+          <li>跨界合作提案與現場協調</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="num">04</div>
+        <h3>公益 ・ 在地推廣</h3>
+        <p>把演出帶到醫院、學校與偏鄉，讓沒有機會走進音樂廳的人，也能被一段旋律照顧到。</p>
+        <ul>
+          <li>公益音樂會企劃與資源串接</li>
+          <li>校園樂團、合唱團演出媒合</li>
+          <li>在地藝文社團合作</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stats" style="margin-top:56px">
+      <div class="stat"><div class="n">全國</div><div class="l">推廣範圍</div></div>
+      <div class="stat"><div class="n">社群</div><div class="l">經營核心</div></div>
+      <div class="stat"><div class="n">跨界</div><div class="l">合作模式</div></div>
+      <div class="stat"><div class="n">公益</div><div class="l">長期投入</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="fans">
+  <div class="wrap reveal">
+    <div class="shead">
+      <div class="k">FOR AUDIENCE</div>
+      <h2>推薦與導聆</h2>
+      <p>給樂迷：近期值得走一趟的演出、第一次進音樂廳的提醒，以及我在現場寫下的筆記。</p>
+    </div>
+
+    <h3 class="blk-title">近期推薦演出</h3>
+    <div class="showcase">
+      <div class="showcase-head">
+        <div>
+          <div class="sc-k">2027 世界巡迴．台灣站</div>
+          <h4>神韻藝術團　Shen Yun Performing Arts</h4>
+          <p>來自紐約的中國古典舞與傳統音樂演出，每年全新製作，由現場樂團伴奏──東方樂器的旋律與西方交響樂團的聲響同台，是我每年都會提醒大家留意的檔期。台灣站橫跨南北五個城市，想看的話建議早點訂，靠近年節的場次一向最快滿。</p>
+        </div>
+      </div>
+      <div class="sched">
+        <div class="sched-row sched-head">
+          <span>日期</span><span>城市</span><span>場館</span><span></span>
+        </div>
+        <div class="sched-row">
+          <span class="d">2026.12.28 – 2027.01.31</span>
+          <span class="c">高雄</span>
+          <span class="v">衛武營國家藝術文化中心　歌劇院</span>
+          <span class="t"><a href="https://zh-tw.shenyun.com/kaohsiung/weiwuying-opera-house" target="_blank" rel="noopener">訂票資訊 →</a></span>
+        </div>
+        <div class="sched-row">
+          <span class="d">2027.01.01 – 01.03</span>
+          <span class="c">臺北</span>
+          <span class="v">臺北表演藝術中心</span>
+          <span class="t"><a href="https://zh-tw.shenyun.com/taipei/taipei-performing-arts-center" target="_blank" rel="noopener">訂票資訊 →</a></span>
+        </div>
+        <div class="sched-row">
+          <span class="d">2027.01.06 – 01.12</span>
+          <span class="c">桃園</span>
+          <span class="v">桃園展演中心</span>
+          <span class="t"><a href="https://zh-tw.shenyun.com/taoyuan/taoyuan-arts-center" target="_blank" rel="noopener">訂票資訊 →</a></span>
+        </div>
+        <div class="sched-row">
+          <span class="d">2027.01.15 – 01.17</span>
+          <span class="c">嘉義</span>
+          <span class="v">嘉義縣表演藝術中心</span>
+          <span class="t"><a href="https://zh-tw.shenyun.com/chiayi/chiayi-performing-arts-center" target="_blank" rel="noopener">訂票資訊 →</a></span>
+        </div>
+        <div class="sched-row">
+          <span class="d">2027.01.20 – 01.24</span>
+          <span class="c">彰化</span>
+          <span class="v">員林演藝廳</span>
+          <span class="t"><a href="https://zh-tw.shenyun.com/changhua/yuanlin-performing-arts-hall" target="_blank" rel="noopener">訂票資訊 →</a></span>
+        </div>
+      </div>
+      <div class="sched-note">
+        訂票專線 0800-888-358　·　場次與票價以主辦單位及
+        <a href="https://zh-tw.shenyun.com/tickets" target="_blank" rel="noopener">神韻官方網站</a>公告為準　·　本頁資料更新於 2026.09.17
+      </div>
+    </div>
+
+    <h3 class="blk-title" style="margin-top:56px">第一次進音樂廳，記得這三件事</h3>
+    <div class="svc">
+      <div class="svc-card">
+        <div class="num">01</div>
+        <h3>不懂，也可以很享受</h3>
+        <p>很多人以為要先認得曲目、記得樂章，才有資格買票。其實不用。音樂不是考試，你不需要聽懂它在講什麼，只需要讓自己被它帶走。真正重要的是你當下被打動的那一刻，沒有人能替你評分。</p>
+      </div>
+      <div class="svc-card">
+        <div class="num">02</div>
+        <h3>掌聲，等指揮的手放下來</h3>
+        <p>新手最緊張的就是拍錯手。記住一個簡單原則：樂章之間通常不鼓掌，等到指揮雙手完全放下、轉身面向觀眾，再一起鼓掌就對了。真的不確定？看旁邊的人，慢半拍沒有人會怪你。</p>
+      </div>
+      <div class="svc-card">
+        <div class="num">03</div>
+        <h3>提早二十分鐘到，比什麼都值得</h3>
+        <p>提早到，你才有時間翻節目單、找座位、把呼吸放慢下來。遲到的話多數場館會請你在門外等到第一個段落結束。另外，穿得舒服整齊即可，不必盛裝——把注意力留給音樂，而不是衣服。</p>
+      </div>
+      <div class="svc-card">
+        <div class="num">＋</div>
+        <h3>加碼：一個最容易忘的細節</h3>
+        <p>手機不是轉靜音，是<strong>關機</strong>；震動在安靜的弱音樂段一樣清楚。開演前先咳完、糖果紙先拆好。這些小事，是一場好演出裡最容易被忽略、卻最需要被守住的默契。</p>
+      </div>
+    </div>
+
+    <h3 class="blk-title" style="margin-top:56px">聆聽筆記</h3>
+    <div class="notes">
+      <article class="note-card">
+        <div class="nk">聆聽筆記 ・ 01</div>
+        <h4>那天散場後，沒有人急著走</h4>
+        <p>好的演出結束時，不是掌聲最大聲的那一刻最動人，而是掌聲停下之後——燈亮了，觀眾卻還坐在位子上，像是不捨得把剛剛那口氣吐出來。我一直覺得，那幾秒鐘才是一場音樂會真正的成績單。</p>
+        <p>推廣這些年，我看過太多華麗的宣傳，但真正讓人記得的，從來都是現場那幾秒的安靜。</p>
+      </article>
+      <article class="note-card">
+        <div class="nk">聆聽筆記 ・ 02</div>
+        <h4>音樂不需要門票才能進來</h4>
+        <p>當藝術走進醫院的走廊、走進校園的川堂，它面對的不是懂音樂的人，而是正在等待報告、正在趕下一堂課的人。他們沒有準備好要欣賞，卻往往是最需要被安慰的人。</p>
+        <p>我始終相信：音樂最有力量的時刻，不在音樂廳的聚光燈下，而是在它出現得毫無預期的那個轉角。</p>
+      </article>
+      <article class="note-card">
+        <div class="nk">聆聽筆記 ・ 03</div>
+        <h4>替一場音樂會寫字，該寫什麼</h4>
+        <p>主辦單位給我的資料，常常是曲目、編制、演出者學歷。但真正讓人願意買票的，往往是另外一句話：這首曲子寫在作曲家人生的哪一年、他當時正經歷什麼。</p>
+        <p>把節目單上的名字還原成一個人，觀眾就會願意走進來。我的工作，其實就是做這件事。</p>
+      </article>
+    </div>
+
+    <div class="follow">
+      <div>
+        <div class="sc-k">FOLLOW</div>
+        <h4>最即時的音樂會訊息都在社群</h4>
+        <p>各地演出資訊、購票提醒與現場紀錄，我都會第一時間分享，歡迎一起聽。</p>
+      </div>
+      <div class="follow-links">
+        <span class="lab">Facebook</span><span class="val"><a href="https://www.facebook.com/huang.xiu.li.384434" target="_blank" rel="noopener">facebook.com/huang.xiu.li.384434</a></span>
+        <span class="lab">LINE</span><span class="val"><a href="https://line.me/ti/g2/oGqTC-LLywrGp-8Ia3jbIcT2jH6XAGJ4Q9encw?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" target="_blank" rel="noopener">加入音樂推廣社群</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="press">
+  <div class="wrap reveal">
+    <div class="shead">
+      <div class="k">PRESS</div>
+      <h2>媒體報導</h2>
+      <p>公開見報紀錄。</p>
+    </div>
+    <div class="press">
+      <div class="press-item">
+        <div class="date">2026.09.15</div>
+        <div>
+          <h3>藝術家跨媒材進駐高禾醫院　江風荷策展「萬物有情」傳遞生命之光</h3>
+          <div class="src">中華日報／中華新聞雲　記者王正平／高雄報導　（同稿另見 台灣好報、PChome Online 新聞、Life 生活網）</div>
+        </div>
+        <a class="go" href="https://www.cdns.com.tw/articles/1460124" target="_blank" rel="noopener">閱讀全文 →</a>
+      </div>
+    </div>
+    <p class="sched-note" style="margin-top:16px">更多報導、電台訪問與節目出席紀錄，持續更新中。</p>
+    <div class="quote-block">
+      <p>「……以及<strong>全國古典音樂推廣版主黃秀麗</strong>等人。」</p>
+      <div class="cite">— 中華日報，2026.09.15，「萬物有情──生命的光．藝術的心」藝術聯展開幕報導</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap reveal">
+    <div class="shead">
+      <div class="k">SELECTED WORK</div>
+      <h2>活動紀錄</h2>
+      <p>出席、推廣與合作過的現場。</p>
+    </div>
+    <div class="timeline">
+      <div class="tl">
+        <div class="y">2026.09</div>
+        <h3>「萬物有情──生命的光．藝術的心」藝術聯展．開幕</h3>
+        <p>高禾醫院 × 心創世界主辦，江風荷策展。以教育及藝文界貴賓身分出席，見證藝術走進醫療空間；展期 2026/9/15－12/24 於高雄高禾醫院 2－4 樓藝術走廊。</p>
+      </div>
+      <div class="tl">
+        <div class="y">2026.09 – 2026.12</div>
+        <h3>展期持續中　·　高禾醫院藝術走廊</h3>
+        <p>「萬物有情」聯展展出至 2026/12/24，集結孫吳也（琉璃畫）、王建傑（攝影）、宓雄（枯墨國畫）與江風荷（流動畫）四位跨領域藝術家，是南台灣少見的「沒有圍牆的美術館」實踐。</p>
+      </div>
+      <div class="tl">
+        <div class="y">持續進行</div>
+        <h3>全國音樂會推廣與社群分享</h3>
+        <p>長期於社群分享全國各地音樂會資訊、撰寫曲目導讀與現場紀錄，串連北中南的樂迷與主辦單位。更多場次紀錄陸續整理上線。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="kit" id="kit">
+  <div class="wrap reveal">
+    <div class="shead">
+      <div class="k">PRESS KIT</div>
+      <h2>媒體資料</h2>
+      <p>給主辦單位與媒體：以下文字可直接複製使用於節目冊、新聞稿與活動簡介，不需另行來信確認。</p>
+    </div>
+
+    <div class="kit-box">
+      <div class="k"><span>正式頭銜</span><button class="copy" data-copy="全國古典音樂推廣版主　黃秀麗">複製</button></div>
+      <p>全國古典音樂推廣版主　黃秀麗</p>
+    </div>
+
+    <div class="kit-box">
+      <div class="k"><span>一句話簡介（30 字）</span><button class="copy" data-copy="黃秀麗，全國古典音樂推廣版主，以社群力量串連主辦單位、樂團與樂迷，讓好音樂被更多人聽見。">複製</button></div>
+      <p>黃秀麗，全國古典音樂推廣版主，以社群力量串連主辦單位、樂團與樂迷，讓好音樂被更多人聽見。</p>
+    </div>
+
+    <div class="kit-box">
+      <div class="k"><span>短版簡介（100 字）</span><button class="copy" data-copy="黃秀麗，長期投入古典音樂推廣，媒體稱為「全國古典音樂推廣版主」。以社群為基地，分享全國各地音樂會資訊、記錄演出現場、撰寫聆聽筆記，讓零散的藝文訊息真正抵達願意聆聽的人。近年並投入藝文跨界與公益推廣，促成音樂走進醫療、校園與日常空間。">複製</button></div>
+      <p>黃秀麗，長期投入古典音樂推廣，媒體稱為「全國古典音樂推廣版主」。以社群為基地，分享全國各地音樂會資訊、記錄演出現場、撰寫聆聽筆記，讓零散的藝文訊息真正抵達願意聆聽的人。近年並投入藝文跨界與公益推廣，促成音樂走進醫療、校園與日常空間。</p>
+    </div>
+
+    <div class="kit-box">
+      <div class="k"><span>長版簡介（200 字）</span><button class="copy" data-copy="黃秀麗，全國古典音樂推廣版主。多年來以社群經營為核心，持續為全國各地的音樂會做推廣與導讀，將專業的節目資訊轉譯為一般聽眾願意親近的語言，累積起跨越縣市的樂迷社群。她的角色介於舞台與觀眾之間：不是演奏者，也非學院樂評，而是讓更多人願意買票走進音樂廳的推手。近年積極投入藝文跨界，串連音樂、視覺藝術、醫療與教育場域，促成藝術走入醫院走廊、校園與社區，讓音樂不只是欣賞的對象，而成為日常生活中真實的陪伴。2026 年出席高禾醫院「萬物有情──生命的光．藝術的心」藝術聯展開幕，並獲媒體報導。">複製</button></div>
+      <p>黃秀麗，全國古典音樂推廣版主。多年來以社群經營為核心，持續為全國各地的音樂會做推廣與導讀，將專業的節目資訊轉譯為一般聽眾願意親近的語言，累積起跨越縣市的樂迷社群。她的角色介於舞台與觀眾之間：不是演奏者，也非學院樂評，而是讓更多人願意買票走進音樂廳的推手。近年積極投入藝文跨界，串連音樂、視覺藝術、醫療與教育場域，促成藝術走入醫院走廊、校園與社區，讓音樂不只是欣賞的對象，而成為日常生活中真實的陪伴。2026 年出席高禾醫院「萬物有情──生命的光．藝術的心」藝術聯展開幕，並獲媒體報導。</p>
+    </div>
+
+    <div class="kit-box">
+      <div class="k"><span>形象照</span></div>
+      <p style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+        <img src="portrait.jpg" alt="黃秀麗形象照" width="528" height="704" style="width:110px;height:auto;aspect-ratio:528/704;border-radius:4px">
+        <span>直向形象照（528 × 704）　<a href="portrait.jpg" download>下載原圖</a><br>
+        <span style="font-size:14px;color:var(--muted)">使用時請標註：照片提供／黃秀麗</span></span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid reveal">
+    <div>
+      <div class="shead" style="margin-bottom:26px">
+        <div class="k">CONTACT</div>
+        <h2>合作邀約</h2>
+        <p>音樂會宣傳、導聆主持、跨界合作與公益演出，都歡迎談談。來信時若能附上演出日期、地點與希望我協助的部分，回覆會更快。</p>
+      </div>
+      <div class="note">
+        <strong>適合找我的時機：</strong>票房需要推一把、想觸及音樂廳以外的新觀眾、開幕或典禮需要懂音樂的主持人、想把演出帶進醫院或校園。
+      </div>
+    </div>
+    <div>
+      <div class="ways">
+        <div class="way"><span class="lab">FACEBOOK</span><span class="val"><a href="https://www.facebook.com/huang.xiu.li.384434" target="_blank" rel="noopener">黃秀麗</a></span></div>
+        <div class="way"><span class="lab">電話</span><span class="val"><a href="tel:+886931889763">0931-889-763</a></span></div>
+        <div class="way"><span class="lab">LINE 社群</span><span class="val"><a href="https://line.me/ti/g2/oGqTC-LLywrGp-8Ia3jbIcT2jH6XAGJ4Q9encw?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" target="_blank" rel="noopener">點此加入</a></span></div>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+        <a class="btn solid" href="https://www.facebook.com/huang.xiu.li.384434" target="_blank" rel="noopener">Facebook 私訊我</a>
+        <a class="btn" href="tel:+886931889763">撥打 0931-889-763</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 黃秀麗　Huang Hsiu-Li　·　全國古典音樂推廣版主</div>
+    <div>讓好音樂，被更多人聽見。</div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    navigator.clipboard.writeText(b.dataset.copy).then(function(){
+      var t=b.textContent;b.textContent='已複製 ✓';setTimeout(function(){b.textContent=t},1600);
+    });
+  });
+});
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
